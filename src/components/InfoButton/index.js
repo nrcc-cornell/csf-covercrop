@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// Climate Smart Farming Apple Stage / Freeze Damage Probability Tool
+// Climate Smart Farming Winter Cover Crop Planting Scheduler
 // Copyright (c) 2018 Cornell Institute for Climate Smart Solutions
 // All Rights Reserved
 //
