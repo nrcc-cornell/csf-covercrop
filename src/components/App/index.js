@@ -15,6 +15,7 @@
 
 import React, { Component } from 'react';
 import { inject, observer} from 'mobx-react';
+import ReactHighcharts from 'react-highcharts';
 
 import LocationPicker from '../../components/LocationPicker';
 import CropPicker from '../../components/CropPicker';
@@ -25,6 +26,9 @@ import InfoWindow from '../../components/InfoWindow';
 
 // Styles
 import '../../styles/App.css';
+
+var HighchartsExporting = require('highcharts-exporting');
+HighchartsExporting(ReactHighcharts.Highcharts);
 
 @inject('store') @observer
 class App extends Component {

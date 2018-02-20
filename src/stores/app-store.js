@@ -467,6 +467,13 @@ export class AppStore {
                     //    text: this.chartSubtitle,
                     //    style: { "fontWeight": "bold", "fontSize": "12px" },
                     //},
+                    exporting: {
+                      chartOptions: {
+                        chart: {
+                          backgroundColor: '#ffffff'
+                        }
+                      }
+                    },
                     plotOptions: {
                         series: {
                             marker: {
@@ -709,6 +716,7 @@ export class AppStore {
                         text: '',
                         style: { "fontWeight": "bold", "fontSize": "12px" },
                     },
+                    exporting: { enabled: false },
                     plotOptions: {
                         series: {
                             animation: false,
