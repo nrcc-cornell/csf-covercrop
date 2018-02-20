@@ -1,0 +1,128 @@
+/*
+///////////////////////////////////////////////////////////////////////////////
+//
+// Climate Smart Farming Winter Cover Crop Planting Scheduler
+// Copyright (c) 2018 Cornell Institute for Climate Smart Solutions
+// All Rights Reserved
+//
+// This software is published under the provisions of the GNU General Public
+// License <http://www.gnu.org/licenses/>. A text copy of the license can be
+// found in the file 'LICENSE' included with this software.
+//
+// A text copy of the copyright notice, licensing conditions and disclaimers
+// is available in the file 'COPYRIGHT' included with this software.
+//
+///////////////////////////////////////////////////////////////////////////////
+*/
+
+/*! jQuery UI - v1.11.4 - 2016-02-01
+* Copyright jQuery Foundation and other contributors; Licensed MIT */
+
+/* DIALOG-SPECIFIC CSS */
+
+#csftool-location-dialogs .x-dialog-button { font-weight: bold; background: #9dda5f; color: #000000; border: 3px solid #72b42d; border-radius: 8px; }
+#csftool-location-dialogs .x-default-dialog-button { font-weight: bold; background: #72b42d; border: 3px solid #3a8104; border-radius: 8px; }
+
+#csftool-location-dialogs div#csftool-location-editor-content input[type="text"],
+#csftool-location-dialogs div#csftool-location-editor-content input[type="number"],
+#csftool-location-dialogs div#csftool-location-editor-content select {
+    display: inline;
+    height: 25px;
+    line-height: 1.25em;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+    color: #000000;
+    border-radius: 3px;
+    vertical-align: middle;
+    /*bnb text align center*/
+    text-align: center;
+    box-shadow: none;
+    border: 0;
+    width: 100px;
+    /*max-width: 300px;*/
+    max-width: 400px;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #eaedf2;
+    -webkit-transition: background-color 0.24s ease-in-out;
+    transition: background-color 0.24s ease-in-out;
+}
+
+
+#csftool-location-dialogs div#csftool-location-editor-content input[type="text"].error,
+#csftool-location-dialogs div#csftool-location-editor-content input[type="text"].is-invalid,
+#csftool-location-dialogs div#csftool-location-editor-content input[type="number"].error,
+#csftool-location-dialogs div#csftool-location-editor-content input[type="number"].is-invalid,
+#csftool-location-dialogs div#csftool-location-editor-content select.error,
+#csftool-location-dialogs div#csftool-location-editor-content select.is-invalid {
+    color: #df2029;
+    border-color: #fbe3e4;
+    background-color: #fbe3e4;
+    background-position: 99% center;
+    background-image: none;
+    outline-color: #fbe3e4;
+}
+
+#csftool-location-dialogs div#csftool-location-editor-content .dialog-label { font-weight: bold; }
+#csftool-location-dialogs div#csftool-location-editor-content input.dialog-text { margin-left: 5px; font-size: 0.9em; }
+#csftool-location-dialogs div#csftool-location-editor-content label.dialog-coord { margin-left: 5px; }
+#csftool-location-dialogs div#csftool-location-editor-content input.dialog-coord { width: 12em;  }
+#csftool-location-dialogs div#csftool-location-editor-content input.location-id { width: 100px; }
+#csftool-location-dialogs div#csftool-location-editor-content input.location-address { width: 400px; }
+#csftool-location-dialogs div#csftool-location-editor-content p.invalid-location-id { color: #ff0000; font-size: 0.8em; font-weight: bold;}
+#csftool-location-dialogs div#csftool-location-dialog-content { padding: 2.5px 2.5px 2.5px 5px; }
+
+#csftool-location-dialogs div.map-container { width: 100%; height: 450px; 
+    display: block; position: relative; overflow: auto;
+    border-top: 3px solid #72b42d; border-bottom: 3px solid #72b42d;
+}
+
+#csftool-location-dialogs .ui-dialog-buttonset { margin-top: 5px; margin-right: 2px; display: inline-block; float: right; }
+
+#csftool-location-dialogs div.locationMarkerInfo { border-radius: 10px 10px 10px 10px; }
+
+#csftool-location-dialogs div.locationInfobubble { font-size: 1em; }
+#csftool-location-dialogs div.locationInfobubble .loc-address{ font-weight: bold; }
+#csftool-location-dialogs div.locationInfobubble .loc-name { font-size: 1.25em; font-weight: bold; }
+
+#csftool-map-dialog-content .ui-dialog {
+    border: 3px solid #72b42d;
+    border-radius: 10px;
+    font-family: Verdana,Lucida Sans,Arial,sans-serif;
+    font-size: 0.9em;
+}
+
+.csf-map-dialog #over_map {
+    position: absolute;
+    top: 10px;
+    left: 15%;
+    z-index: 5;
+    padding-left: 5px;
+}
+
+.csf-map-dialog div#over_map input#csftool-address-form-text { float: left; max-width: 400px; width: 380px; height: 23px; font-size: 0.9em; }
+.csf-map-dialog div#over_map input[type="button"] { float: right; font-size: 0.85em }
+
+#csftool-marker-name { width: 10em; }
+#csftool-marker-description { margin: 4px; }
+
+.csf-map-dialog { background: #C8E5BE; }
+.csf-map-dialog .ui-dialog-titlebar { background: #228b22; color: #ffffff; height: 40px; text-align: center; }
+.csf-map-dialog .ui-dialog-content { padding: 2px }
+.csf-editor-dialog { background: #C8E5BE; }
+.csf-editor-dialog .ui-dialog-titlebar { background: #228b22; color: #ffffff; font-size: 1.0em; text-align: center; }
+.csf-editor-dialog .ui-dialog-buttonset { font-size: 0.7em; }
+.csf-editor-dialog .ui-dialog-buttonpane { background: #C8E5BE; border-width: 0; padding: 0; margin: 0 }
+
+#csftool-map-dialog-content #csftool-map-dialog-legend {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #000;
+}
+
+#csftool-map-dialog-content #csftool-map-dialog-legend img {
+    vertical-align: middle;
+}
+

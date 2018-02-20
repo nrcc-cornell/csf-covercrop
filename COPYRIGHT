@@ -1,0 +1,53 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// Climate Smart Farming Winter Cover Crop Planting Scheduler
+// Copyright (c) 2018 Cornell Institute for Climate Smart Solutions
+// All Rights Reserved
+// 
+// Principal Author : Brian Belcher
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. A text copy of the license can be found
+// in the file 'LICENSE' included with this software. If not,
+// see <http://www.gnu.org/licenses/>.
+//
+// DISCLAIMERS :
+//
+//   THE NAME OF CORNELL UNIVERSITY, CORNELL INSTITUTE FOR CLIMATE SMART
+//   SOLUTIONS OR THE AUTHOR(S) MAY NOT BE USED IN ADVERTISING, PROMOTIONS,
+//   OR PUBLICTY PERTAINING TO DISTRIBUTION OR USE OF THE SOFTWARE
+//   (OR ANY DERIVED WORKS) WITHOUT SPECIFIC PRIOR WRITTEN PERMISSION.
+//
+//   BECAUSE THIS SOFTWARE IS LICENSED FREE OF CHARGE, IT IS PROVIDED
+//   'AS IS' AND WITHOUT WARRANTY OF ANY KIND.
+//
+//   CORNELL UNIVERSITY, CORNELL INSTITUTE FOR CLIMATE SMART SOLUTIONS AND
+//   THE AUTHOR(S) MAKE NO REPRESENTATIONS OR WARRANTIES, EITHER EXPRESS
+//   OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+//   TITLE, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE.
+//
+//   CORNELL UNIVERSITY, CORNELL INSTITUTE FOR CLIMATE SMART SOLUTIONS AND
+//   THE AUTHOR(S) SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF
+//   THE SOFTWARE FOR ANY GENERAL, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
+//   DAMAGES OR LOSS ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM
+//   OR ANY DERIVATION, MODIFICATION OR DISTRIBUTION THEREOF, EVEN IF SUCH
+//   HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+//
+///////////////////////////////////////////////////////////////////////////////
+///                                                                         ///
+///          The above copyright notice, licensing conditions and           ///
+///          disclaimers must appear in all distributions of the            ///
+///          original software, any derived works and their                 ///
+///          supporting documentation.                                      ///
+///                                                                         ///
+///////////////////////////////////////////////////////////////////////////////
