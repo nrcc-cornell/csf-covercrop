@@ -1,6 +1,6 @@
 {
   "name": "csf-winter-cover-crop-planting-scheduler",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://cicss.github.io/csf-covercrop",
   "private": true,
   "devDependencies": {
@@ -8,12 +8,17 @@
   },
   "dependencies": {
     "highcharts": "^5.0.14",
+    "highcharts-exporting": "^0.1.7",
+    "jquery": "^3.3.1",
+    "jquery-ui": "^1.12.1",
     "jsonp": "^0.2.1",
     "mobx": "^3.3.0",
     "mobx-react": "^4.3.2",
     "react": "^15.6.2",
+    "react-async-script-loader": "^0.3.0",
     "react-dom": "^15.6.2",
     "react-highcharts": "^12.0.0",
+    "react-icons-kit": "^1.0.7",
     "react-loader-advanced": "^1.6.2",
     "react-select": "^1.0.0-rc.10",
     "recharts": "^1.0.0-apha.5"

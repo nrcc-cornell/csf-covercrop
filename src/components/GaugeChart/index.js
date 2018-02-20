@@ -18,7 +18,7 @@ import { Sector, Cell, PieChart, Pie } from 'recharts';
 
 const GaugeChart = (props) => {
         const width = props.config.width;
-        const chartTitle = props.config.chartTitle;
+        //const chartTitle = props.config.chartTitle;
         const chartValue = props.config.chartValue;
         const colorData = props.config.colorData;
 

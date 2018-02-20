@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// Climate Smart Farming Winter Cover Crop Planting Scheduler
+// Climate Smart Farming Apple Stage / Freeze Damage Probability Tool
 // Copyright (c) 2018 Cornell Institute for Climate Smart Solutions
 // All Rights Reserved
 //
@@ -13,22 +13,10 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-import React, { Component } from 'react';
-import { inject, observer } from 'mobx-react';
+import { AppStore } from "./app-store";
 
-@inject("store") @observer
-class Prototype extends Component {
-
-  render() {
-        return (
-            <div className="input-div">
-              <div className="prototype-label">
-                  <label><b>PROTOTYPE</b></label>
-              </div>
-            </div>
-        )
-  }
-
+const store = {
+  app: new AppStore(),
 };
 
-export default Prototype;
+export default store;

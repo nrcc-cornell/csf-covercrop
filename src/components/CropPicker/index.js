@@ -18,6 +18,8 @@ import { inject, observer } from 'mobx-react';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 
+import '../../styles/CropPicker.css';
+
 //const cropArray = ['Buckwheat','Hairy Vetch','Mustard','Rye']
 const cropArray = ['Buckwheat','Mustard','Rye']
 
@@ -25,7 +27,7 @@ var disabled
 var cropOptions = []
 for (var v of cropArray) {
     disabled = false
-    if (v=='Hairy Vetch') { disabled = true };
+    if (v==='Hairy Vetch') { disabled = true };
     cropOptions.push({ value: v.toString(), label: v.toString(), clearableValue: false, disabled: disabled })
 }
 
@@ -34,8 +36,8 @@ class CropPicker extends Component {
 
   render() {
         return (
-            <div className='input-div'>
-            <div className='input-label'>
+            <div className='crop-input-div'>
+            <div className='crop-input-label'>
               <label><b>Cover Crop</b></label>
             </div>
             <div className='crop-select-div'>
@@ -43,10 +45,10 @@ class CropPicker extends Component {
                 <td className='crop-select-td'>
                 <Select
                     name="crop"
-                    value={this.props.store.cc.getCrop}
+                    value={this.props.store.app.getCrop}
                     clearable={false}
                     options={cropOptions}
-                    onChange={this.props.store.cc.updateSelectedCrop}
+                    onChange={this.props.store.app.updateSelectedCrop}
                 />
                 </td>
                 </tr></tbody></table>

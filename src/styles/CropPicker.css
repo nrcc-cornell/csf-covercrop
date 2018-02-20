@@ -1,0 +1,17 @@
+    .crop-input-div {
+        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: 10px 0px 40px 0px;
+    }
+
+    .crop-input-label {
+        margin: 10px 0px 6px 8px;
+        font-size: 18px;
+    }
+
+    .crop-select-div {
+        margin: 0px 0px 0px 10px;
+    }
+
+    .crop-select-td{
+        width: 125px;
+    }

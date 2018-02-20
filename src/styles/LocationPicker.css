@@ -1,0 +1,75 @@
+/*
+///////////////////////////////////////////////////////////////////////////////
+//
+// Climate Smart Farming Apple Stage / Freeze Damage Probability Tool
+// Copyright (c) 2018 Cornell Institute for Climate Smart Solutions
+// All Rights Reserved
+//
+// This software is published under the provisions of the GNU General Public
+// License <http://www.gnu.org/licenses/>. A text copy of the license can be
+// found in the file 'LICENSE' included with this software.
+//
+// A text copy of the copyright notice, licensing conditions and disclaimers
+// is available in the file 'COPYRIGHT' included with this software.
+//
+///////////////////////////////////////////////////////////////////////////////
+*/
+    .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+        text-align: center;
+        float: none;
+    }
+
+    .location-input-div {
+        //font-family: 'arial';
+        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .location-input-label {
+        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: 6px 0px 6px 8px;
+        //font-family: 'arial';
+        //font-family: 'lato';
+        //font-size: 18px;
+        font-size: 18px;
+    }
+
+    .change-location {
+        font-family: 'verdana';
+        font-size: 0.8em;
+        color: #000000;
+        width: 160px;
+        height: 24px;
+        background: #4ca20b;
+        border-color: #006600;
+        border-width: 1px;
+        border-radius: 12px;
+        text-align: right;
+    }
+
+    .change-location:hover {
+        color: #ffffff;
+        background: #006600;
+        border-color: #4ca20b;
+        border-width: 2px;
+    }
+
+    .location-button {
+        margin-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10em;
+    }
+
+    .location-text {
+        margin: 0px 0px 6px 8px;
+        //font-family: 'arial';
+        //font-family: 'lato';
+        font-size: 0.9em;
+    }
+
+    .location-icon {
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+

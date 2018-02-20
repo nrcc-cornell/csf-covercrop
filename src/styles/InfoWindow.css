@@ -1,0 +1,67 @@
+/*
+///////////////////////////////////////////////////////////////////////////////
+//
+// Climate Smart Farming Apple Stage / Freeze Damage Probability Tool
+// Copyright (c) 2018 Cornell Institute for Climate Smart Solutions
+// All Rights Reserved
+//
+// This software is published under the provisions of the GNU General Public
+// License <http://www.gnu.org/licenses/>. A text copy of the license can be
+// found in the file 'LICENSE' included with this software.
+//
+// A text copy of the copyright notice, licensing conditions and disclaimers
+// is available in the file 'COPYRIGHT' included with this software.
+//
+///////////////////////////////////////////////////////////////////////////////
+*/
+    .data-sources{
+        //font-family: verdana;
+        font-family: lato;
+        position: absolute;
+        //text-align: left;
+        text-align: justify;
+        height: 460px;
+        width: 724px;
+        //width: 698px;
+        border: 40px solid rgba(192,192,192,0.8);
+
+        -moz-background-clip: border;     /* Firefox 3.6 */
+        -webkit-background-clip: border;  /* Safari 4? Chrome 6? */
+        background-clip: border-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+        -moz-background-clip: padding;     /* Firefox 3.6 */
+        -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+        background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+        -moz-background-clip: content;     /* Firefox 3.6 */
+        -webkit-background-clip: content;  /* Safari 4? Chrome 6? */
+        background-clip: content-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+        background-color: rgba(255,255,255,1.0);
+        z-index: 100;
+    }
+
+    * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .data-sources-display-none{
+        display: none;
+    }
+
+    .data-sources-button-return {
+        position: absolute;
+        float: left;
+        margin: 10px;
+        font-size: 0.8em;
+    }
+
+    .data-sources-content {
+        //font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        overflow: auto;
+        height: 88%;
+        margin: 20px 10px 20px 10px;
+    }
+

@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// Climate Smart Farming Winter Cover Crop Planting Scheduler
+// Climate Smart Farming Apple Stage / Freeze Damage Probability Tool
 // Copyright (c) 2018 Cornell Institute for Climate Smart Solutions
 // All Rights Reserved
 //
@@ -15,32 +15,38 @@
 
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
+import { string } from 'prop-types'
+import Icon from 'react-icons-kit';
+import { infoCircle } from 'react-icons-kit/fa/infoCircle';       
+//import { horizontalCenter } from 'react-icons-kit';
+
+import '../../styles/InfoButton.css';
 
 @inject("store") @observer
-class DataSources extends Component {
+class InfoButton extends Component {
 
-  constructor(props) {
-    super(props);
+  static propTypes = {
+    button_label: string,
   }
 
-  componentDidMount() {
-    jQuery(".data-sources-button").button({
-       icons: { primary: "ui-icon-info" },
-       iconPosition: "end",
-       label: "Data Info",
-       //text: false
-    });
+  static defaultProps = {
+    button_label: "Go",
   }
 
   render() {
-        const element = document.getElementsByClassName('data-sources');
+        const className = this.props.store.app.popupStatus ? 'data-sources-button-active' : 'data-sources-button-inactive';
         return (
             <div className="data-sources-label">
-                <button className="data-sources-button" onClick={this.props.store.cc.updatePopupStatus}>Data Sources</button>
+              <div>
+                <button className={className} onClick={this.props.store.app.updatePopupStatus}>
+                    <Icon icon={infoCircle} className="info-icon" />
+                    {this.props.button_label}
+                </button>
+              </div>
             </div>
         )
   }
 
 };
 
-export default DataSources;
+export default InfoButton;
