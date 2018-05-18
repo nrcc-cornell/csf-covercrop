@@ -439,6 +439,7 @@ export class AppStore {
         }
 
     @computed get chartConfig() {
+            let years = this.getCropData['years'];
             return {
                     credits: { enabled: false },
                     legend: {
@@ -558,7 +559,8 @@ export class AppStore {
                         enableMouseTracking: false,
                     },{
                         type: 'line',
-                        name: 'POR: 1979-2016',
+                        //name: 'POR: 1979-2016',
+                        name: 'POR: '+years[0].toString()+'-'+years[years.length-1].toString(),
                         data: this.probChartDataPOR,
                         lineWidth: 2,
                         color: 'rgba(0,0,255,0.2)',

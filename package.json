@@ -1,6 +1,6 @@
 {
   "name": "csf-winter-cover-crop-planting-scheduler",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://cicss.github.io/csf-covercrop",
   "private": true,
   "devDependencies": {
