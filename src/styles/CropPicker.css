@@ -30,5 +30,6 @@
     }
 
     .crop-select-td{
-        width: 125px;
+        //width: 125px;
+        width: 150px;
     }

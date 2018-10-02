@@ -16,7 +16,7 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 import Select from 'react-select';
-import 'react-select/dist/react-select.css';
+//import 'react-select/dist/react-select.css';
 
 import '../../styles/CropPicker.css';
 
@@ -45,8 +45,9 @@ class CropPicker extends Component {
                 <td className='crop-select-td'>
                 <Select
                     name="crop"
+                    placeholder={this.props.store.app.getCrop}
                     value={this.props.store.app.getCrop}
-                    clearable={false}
+                    isClearable={false}
                     options={cropOptions}
                     onChange={this.props.store.app.updateSelectedCrop}
                 />
