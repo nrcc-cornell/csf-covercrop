@@ -4,7 +4,7 @@
   "homepage": "https://cicss.github.io/csf-covercrop",
   "private": true,
   "devDependencies": {
-    "custom-react-scripts": "0.2.0"
+    "custom-react-scripts": "^0.2.2"
   },
   "dependencies": {
     "highcharts": "^6.1.4",
